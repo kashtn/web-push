@@ -109,6 +109,7 @@
       import {
         getMessaging,
         onMessage,
+        getToken
       } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-messaging.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
@@ -151,8 +152,7 @@
         showToken("loading...");
         // Get registration token. Initially this makes a network call, once retrieved
         // subsequent calls to getToken will return from cache.
-        messaging
-          .getToken({
+        getToken(messaging, {
             vapidKey:
               "BNDR5UyU4EPY52TkGtTU0gVSSpHnPMv819cKIOrLw5_WwUNfhH1c7zo_TID_WZawFxytDNQNKtXUvEl91ZYiK-c",
           })
