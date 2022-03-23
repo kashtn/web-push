@@ -2,7 +2,7 @@
   "name": "push-web-widget",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@gitlab.mfms:avaliullina/push-web-widget.git",
+  "repository": "https://github.com/kashtn/web-push.git",
   "author": "Ivan Kashtanov",
   "license": "MIT",
   "scripts": {
